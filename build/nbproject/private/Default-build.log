@@ -1,0 +1,758 @@
+Building core-common-lib
+Building file: ../CC3000_Host_Driver/cc3000_common.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/cc3000_common.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/cc3000_common.o ../CC3000_Host_Driver/cc3000_common.c
+
+Building file: ../CC3000_Host_Driver/evnt_handler.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/evnt_handler.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/evnt_handler.o ../CC3000_Host_Driver/evnt_handler.c
+
+Building file: ../CC3000_Host_Driver/hci.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/hci.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/hci.o ../CC3000_Host_Driver/hci.c
+
+Building file: ../CC3000_Host_Driver/netapp.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/netapp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/netapp.o ../CC3000_Host_Driver/netapp.c
+
+Building file: ../CC3000_Host_Driver/nvmem.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/nvmem.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/nvmem.o ../CC3000_Host_Driver/nvmem.c
+In file included from ../CC3000_Host_Driver/nvmem.c:47:0:
+../CC3000_Host_Driver/socket.h:146:0: warning: "fd_set" redefined
+ #define fd_set _types_fd_set_cc3000
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/nvmem.c:43:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:256:0: note: this is the location of the previous definition
+ #define fd_set _types_fd_set
+ ^
+In file included from ../CC3000_Host_Driver/nvmem.c:47:0:
+../CC3000_Host_Driver/socket.h:162:0: warning: "FD_SET" redefined
+ #define FD_SET(fd, fdsetp)      __FD_SET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/nvmem.c:43:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:258:0: note: this is the location of the previous definition
+ #  define FD_SET(n, p) ((p)->fds_bits[(n)/NFDBITS] |= (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/nvmem.c:47:0:
+../CC3000_Host_Driver/socket.h:163:0: warning: "FD_CLR" redefined
+ #define FD_CLR(fd, fdsetp)      __FD_CLR (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/nvmem.c:43:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:259:0: note: this is the location of the previous definition
+ #  define FD_CLR(n, p) ((p)->fds_bits[(n)/NFDBITS] &= ~(1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/nvmem.c:47:0:
+../CC3000_Host_Driver/socket.h:164:0: warning: "FD_ISSET" redefined
+ #define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/nvmem.c:43:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:260:0: note: this is the location of the previous definition
+ #  define FD_ISSET(n, p) ((p)->fds_bits[(n)/NFDBITS] & (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/nvmem.c:47:0:
+../CC3000_Host_Driver/socket.h:165:0: warning: "FD_ZERO" redefined
+ #define FD_ZERO(fdsetp)         __FD_ZERO (fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/nvmem.c:43:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:261:0: note: this is the location of the previous definition
+ #  define FD_ZERO(p) (__extension__ (void)({ \
+ ^
+
+Building file: ../CC3000_Host_Driver/security.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/security.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/security.o ../CC3000_Host_Driver/security.c
+
+Building file: ../CC3000_Host_Driver/socket.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/socket.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/socket.o ../CC3000_Host_Driver/socket.c
+In file included from ../CC3000_Host_Driver/socket.c:48:0:
+../CC3000_Host_Driver/socket.h:146:0: warning: "fd_set" redefined
+ #define fd_set _types_fd_set_cc3000
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/socket.c:44:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:256:0: note: this is the location of the previous definition
+ #define fd_set _types_fd_set
+ ^
+In file included from ../CC3000_Host_Driver/socket.c:48:0:
+../CC3000_Host_Driver/socket.h:162:0: warning: "FD_SET" redefined
+ #define FD_SET(fd, fdsetp)      __FD_SET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/socket.c:44:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:258:0: note: this is the location of the previous definition
+ #  define FD_SET(n, p) ((p)->fds_bits[(n)/NFDBITS] |= (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/socket.c:48:0:
+../CC3000_Host_Driver/socket.h:163:0: warning: "FD_CLR" redefined
+ #define FD_CLR(fd, fdsetp)      __FD_CLR (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/socket.c:44:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:259:0: note: this is the location of the previous definition
+ #  define FD_CLR(n, p) ((p)->fds_bits[(n)/NFDBITS] &= ~(1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/socket.c:48:0:
+../CC3000_Host_Driver/socket.h:164:0: warning: "FD_ISSET" redefined
+ #define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/socket.c:44:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:260:0: note: this is the location of the previous definition
+ #  define FD_ISSET(n, p) ((p)->fds_bits[(n)/NFDBITS] & (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../CC3000_Host_Driver/socket.c:48:0:
+../CC3000_Host_Driver/socket.h:165:0: warning: "FD_ZERO" redefined
+ #define FD_ZERO(fdsetp)         __FD_ZERO (fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../CC3000_Host_Driver/socket.c:44:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:261:0: note: this is the location of the previous definition
+ #  define FD_ZERO(p) (__extension__ (void)({ \
+ ^
+../CC3000_Host_Driver/socket.c: In function 'simple_link_send':
+../CC3000_Host_Driver/socket.c:1054:8: warning: 'addr_offset' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   args = UINT32_TO_STREAM(args, addr_offset);
+        ^
+../CC3000_Host_Driver/socket.c:1001:15: warning: 'pDataPtr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  UINT8 *ptr, *pDataPtr, *args;
+               ^
+../CC3000_Host_Driver/socket.c:1068:2: warning: 'uArgSize' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  hci_data_send(opcode, ptr, uArgSize, len,(UINT8*)to, tolen);
+  ^
+
+Building file: ../CC3000_Host_Driver/wlan.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/CC3000_Host_Driver/wlan.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/CC3000_Host_Driver/wlan.o ../CC3000_Host_Driver/wlan.c
+../CC3000_Host_Driver/wlan.c: In function 'wlan_start':
+../CC3000_Host_Driver/wlan.c:259:9: warning: unused variable 'ulSpiIRQState' [-Wunused-variable]
+  UINT32 ulSpiIRQState;
+         ^
+../CC3000_Host_Driver/wlan.c: In function 'wlan_add_profile':
+../CC3000_Host_Driver/wlan.c:668:2: warning: 'arg_len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  hci_command_send(HCI_CMND_WLAN_IOCTL_ADD_PROFILE,
+  ^
+
+Building file: ../SPARK_Firmware_Driver/src/cc3000_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/cc3000_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/cc3000_spi.o ../SPARK_Firmware_Driver/src/cc3000_spi.c
+
+Building file: ../SPARK_Firmware_Driver/src/hw_config.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/hw_config.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/hw_config.o ../SPARK_Firmware_Driver/src/hw_config.c
+
+Building file: ../SPARK_Firmware_Driver/src/sst25vf_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/sst25vf_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/sst25vf_spi.o ../SPARK_Firmware_Driver/src/sst25vf_spi.c
+
+Building file: ../SPARK_Firmware_Driver/src/system_stm32f10x.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/system_stm32f10x.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/system_stm32f10x.o ../SPARK_Firmware_Driver/src/system_stm32f10x.c
+
+Building file: ../SPARK_Firmware_Driver/src/usb_pwr.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/usb_pwr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/usb_pwr.o ../SPARK_Firmware_Driver/src/usb_pwr.c
+
+Building file: ../SPARK_Firmware_Driver/src/debug.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/debug.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/debug.o ../SPARK_Firmware_Driver/src/debug.c
+
+Building file: ../SPARK_Firmware_Driver/src/panic.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/panic.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/panic.o ../SPARK_Firmware_Driver/src/panic.c
+
+Building file: ../SPARK_Firmware_Driver/src/spi_bus.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Firmware_Driver/src/spi_bus.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Firmware_Driver/src/spi_bus.o ../SPARK_Firmware_Driver/src/spi_bus.c
+
+Building file: ../SPARK_Services/src/rgbled.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Services/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/SPARK_Services/src/rgbled.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/SPARK_Services/src/rgbled.o ../SPARK_Services/src/rgbled.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_core.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_core.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_core.o ../STM32_USB-FS-Device_Driver/src/usb_core.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_init.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_init.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_init.o ../STM32_USB-FS-Device_Driver/src/usb_init.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_int.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_int.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_int.o ../STM32_USB-FS-Device_Driver/src/usb_int.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_mem.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_mem.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_mem.o ../STM32_USB-FS-Device_Driver/src/usb_mem.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_regs.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_regs.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_regs.o ../STM32_USB-FS-Device_Driver/src/usb_regs.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_sil.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_sil.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_sil.o ../STM32_USB-FS-Device_Driver/src/usb_sil.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/misc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/misc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/misc.o ../STM32F10x_StdPeriph_Driver/src/misc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../SPARK_Services/inc -I../SPARK_Services/src/inc -I../STM32_USB-FS-Device_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -Wno-switch -fmessage-length=0 -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DRELEASE_BUILD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c
+
+Building target: libcore-common-lib.a
+Invoking: ARM GCC Archiver
+arm-none-eabi-ar -r libcore-common-lib.a obj/CC3000_Host_Driver/cc3000_common.o obj/CC3000_Host_Driver/evnt_handler.o obj/CC3000_Host_Driver/hci.o obj/CC3000_Host_Driver/netapp.o obj/CC3000_Host_Driver/nvmem.o obj/CC3000_Host_Driver/security.o obj/CC3000_Host_Driver/socket.o obj/CC3000_Host_Driver/wlan.o obj/SPARK_Firmware_Driver/src/cc3000_spi.o obj/SPARK_Firmware_Driver/src/hw_config.o obj/SPARK_Firmware_Driver/src/sst25vf_spi.o obj/SPARK_Firmware_Driver/src/system_stm32f10x.o obj/SPARK_Firmware_Driver/src/usb_pwr.o obj/SPARK_Firmware_Driver/src/debug.o obj/SPARK_Firmware_Driver/src/panic.o obj/SPARK_Firmware_Driver/src/spi_bus.o obj/SPARK_Services/src/rgbled.o obj/STM32_USB-FS-Device_Driver/src/usb_core.o obj/STM32_USB-FS-Device_Driver/src/usb_init.o obj/STM32_USB-FS-Device_Driver/src/usb_int.o obj/STM32_USB-FS-Device_Driver/src/usb_mem.o obj/STM32_USB-FS-Device_Driver/src/usb_regs.o obj/STM32_USB-FS-Device_Driver/src/usb_sil.o obj/STM32F10x_StdPeriph_Driver/src/misc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+arm-none-eabi-ar: creating libcore-common-lib.a
+ 
+
+Building core-communication-lib
+Building file: ../lib/tropicssl/library/aes.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/aes.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -c -o obj/lib/tropicssl/library/aes.o ../lib/tropicssl/library/aes.c
+
+Building file: ../lib/tropicssl/library/bignum.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/bignum.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -c -o obj/lib/tropicssl/library/bignum.o ../lib/tropicssl/library/bignum.c
+
+Building file: ../lib/tropicssl/library/padlock.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/padlock.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -c -o obj/lib/tropicssl/library/padlock.o ../lib/tropicssl/library/padlock.c
+
+Building file: ../lib/tropicssl/library/rsa.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/rsa.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -c -o obj/lib/tropicssl/library/rsa.o ../lib/tropicssl/library/rsa.c
+
+Building file: ../lib/tropicssl/library/sha1.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/sha1.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -c -o obj/lib/tropicssl/library/sha1.o ../lib/tropicssl/library/sha1.c
+
+Building file: ../src/coap.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/coap.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -fno-exceptions -fno-rtti -c -o obj/src/coap.o ../src/coap.cpp
+
+Building file: ../src/handshake.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/handshake.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -fno-exceptions -fno-rtti -c -o obj/src/handshake.o ../src/handshake.cpp
+
+Building file: ../src/spark_protocol.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/spark_protocol.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -fno-exceptions -fno-rtti -c -o obj/src/spark_protocol.o ../src/spark_protocol.cpp
+
+Building file: ../src/events.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/events.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -DRELEASE_BUILD -fno-exceptions -fno-rtti -c -o obj/src/events.o ../src/events.cpp
+
+Building target: libcore-communication-lib.a
+Invoking: ARM GCC Archiver
+arm-none-eabi-ar -r libcore-communication-lib.a obj/lib/tropicssl/library/aes.o obj/lib/tropicssl/library/bignum.o obj/lib/tropicssl/library/padlock.o obj/lib/tropicssl/library/rsa.o obj/lib/tropicssl/library/sha1.o obj/src/coap.o obj/src/handshake.o obj/src/spark_protocol.o obj/src/events.o
+arm-none-eabi-ar: creating libcore-communication-lib.a
+ 
+
+Building file: ../src/application.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/application.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/application.o ../src/application.cpp
+
+Building file: ../src/main.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/main.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/main.o ../src/main.cpp
+
+Building file: ../src/newlib_stubs.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/newlib_stubs.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/newlib_stubs.o ../src/newlib_stubs.cpp
+
+Building file: ../src/spark_utilities.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_utilities.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_utilities.o ../src/spark_utilities.cpp
+../src/spark_utilities.cpp: In function 'int Internet_Test()':
+../src/spark_utilities.cpp:849:9: warning: unused variable 'rv' [-Wunused-variable]
+     int rv = closesocket(testSocket);
+         ^
+
+Building file: ../src/spark_wiring.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring.o ../src/spark_wiring.cpp
+../src/spark_wiring.cpp: In function 'void delay(long unsigned int)':
+../src/spark_wiring.cpp:649:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (elapsed_millis >= ms)
+                      ^
+../src/spark_wiring.cpp:659:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   else if ((elapsed_millis >= spark_loop_elapsed_millis) || (spark_loop_total_millis >= SPARK_LOOP_DELAY_MILLIS))
+                            ^
+
+Building file: ../src/spark_wiring_eeprom.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_eeprom.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_eeprom.o ../src/spark_wiring_eeprom.cpp
+
+Building file: ../src/spark_wiring_i2c.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_i2c.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_i2c.o ../src/spark_wiring_i2c.cpp
+
+Building file: ../src/spark_wiring_interrupts.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_interrupts.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_interrupts.o ../src/spark_wiring_interrupts.cpp
+
+Building file: ../src/spark_wiring_ipaddress.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_ipaddress.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_ipaddress.o ../src/spark_wiring_ipaddress.cpp
+
+Building file: ../src/spark_wiring_print.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_print.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_print.o ../src/spark_wiring_print.cpp
+
+Building file: ../src/spark_wiring_random.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_random.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_random.o ../src/spark_wiring_random.cpp
+
+Building file: ../src/spark_wiring_servo.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_servo.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_servo.o ../src/spark_wiring_servo.cpp
+
+Building file: ../src/spark_wiring_spi.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_spi.o ../src/spark_wiring_spi.cpp
+
+Building file: ../src/spark_wiring_stream.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_stream.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_stream.o ../src/spark_wiring_stream.cpp
+
+Building file: ../src/spark_wiring_string.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_string.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_string.o ../src/spark_wiring_string.cpp
+
+Building file: ../src/spark_wiring_tcpclient.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_tcpclient.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_tcpclient.o ../src/spark_wiring_tcpclient.cpp
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+../../core-common-lib/CC3000_Host_Driver/socket.h:146:0: warning: "fd_set" redefined
+ #define fd_set _types_fd_set_cc3000
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:256:0: note: this is the location of the previous definition
+ #define fd_set _types_fd_set
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+../../core-common-lib/CC3000_Host_Driver/socket.h:162:0: warning: "FD_SET" redefined
+ #define FD_SET(fd, fdsetp)      __FD_SET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:258:0: note: this is the location of the previous definition
+ #  define FD_SET(n, p) ((p)->fds_bits[(n)/NFDBITS] |= (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+../../core-common-lib/CC3000_Host_Driver/socket.h:163:0: warning: "FD_CLR" redefined
+ #define FD_CLR(fd, fdsetp)      __FD_CLR (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:259:0: note: this is the location of the previous definition
+ #  define FD_CLR(n, p) ((p)->fds_bits[(n)/NFDBITS] &= ~(1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+../../core-common-lib/CC3000_Host_Driver/socket.h:164:0: warning: "FD_ISSET" redefined
+ #define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:260:0: note: this is the location of the previous definition
+ #  define FD_ISSET(n, p) ((p)->fds_bits[(n)/NFDBITS] & (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+../../core-common-lib/CC3000_Host_Driver/socket.h:165:0: warning: "FD_ZERO" redefined
+ #define FD_ZERO(fdsetp)         __FD_ZERO (fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpclient.cpp:28:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:261:0: note: this is the location of the previous definition
+ #  define FD_ZERO(p) (__extension__ (void)({ \
+ ^
+../src/spark_wiring_tcpclient.cpp: In member function 'virtual void TCPClient::stop()':
+../src/spark_wiring_tcpclient.cpp:197:11: warning: unused variable 'rv' [-Wunused-variable]
+       int rv = closesocket(_sock);
+           ^
+
+Building file: ../src/spark_wiring_tcpserver.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_tcpserver.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_tcpserver.o ../src/spark_wiring_tcpserver.cpp
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+../../core-common-lib/CC3000_Host_Driver/socket.h:146:0: warning: "fd_set" redefined
+ #define fd_set _types_fd_set_cc3000
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:256:0: note: this is the location of the previous definition
+ #define fd_set _types_fd_set
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+../../core-common-lib/CC3000_Host_Driver/socket.h:162:0: warning: "FD_SET" redefined
+ #define FD_SET(fd, fdsetp)      __FD_SET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:258:0: note: this is the location of the previous definition
+ #  define FD_SET(n, p) ((p)->fds_bits[(n)/NFDBITS] |= (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+../../core-common-lib/CC3000_Host_Driver/socket.h:163:0: warning: "FD_CLR" redefined
+ #define FD_CLR(fd, fdsetp)      __FD_CLR (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:259:0: note: this is the location of the previous definition
+ #  define FD_CLR(n, p) ((p)->fds_bits[(n)/NFDBITS] &= ~(1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+../../core-common-lib/CC3000_Host_Driver/socket.h:164:0: warning: "FD_ISSET" redefined
+ #define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:260:0: note: this is the location of the previous definition
+ #  define FD_ISSET(n, p) ((p)->fds_bits[(n)/NFDBITS] & (1L << ((n) % NFDBITS)))
+ ^
+In file included from ../../core-common-lib/CC3000_Host_Driver/evnt_handler.h:38:0,
+                 from ../inc/spark_wlan.h:33,
+                 from ../inc/main.h:38,
+                 from ../inc/spark_utilities.h:30,
+                 from ../inc/spark_wiring.h:33,
+                 from ../inc/spark_wiring_stream.h:36,
+                 from ../inc/spark_wiring_client.h:24,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+../../core-common-lib/CC3000_Host_Driver/socket.h:165:0: warning: "FD_ZERO" redefined
+ #define FD_ZERO(fdsetp)         __FD_ZERO (fdsetp)
+ ^
+In file included from c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\stdio.h:48:0,
+                 from ../inc/spark_wiring_print.h:30,
+                 from ../inc/spark_wiring_client.h:23,
+                 from ../inc/spark_wiring_tcpclient.h:29,
+                 from ../src/spark_wiring_tcpserver.cpp:26:
+c:\program files (x86)\gnu tools arm embedded\4.9 2015q1\arm-none-eabi\include\sys\types.h:261:0: note: this is the location of the previous definition
+ #  define FD_ZERO(p) (__extension__ (void)({ \
+ ^
+
+Building file: ../src/spark_wiring_time.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_time.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_time.o ../src/spark_wiring_time.cpp
+../src/spark_wiring_time.cpp:131:18: warning: 'tm Get_CalendarTime()' defined but not used [-Wunused-function]
+ static struct tm Get_CalendarTime(void)
+                  ^
+../src/spark_wiring_time.cpp:148:13: warning: 'void Set_CalendarTime(tm)' defined but not used [-Wunused-function]
+ static void Set_CalendarTime(struct tm calendar_time)
+             ^
+
+Building file: ../src/spark_wiring_tone.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_tone.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_tone.o ../src/spark_wiring_tone.cpp
+
+Building file: ../src/spark_wiring_udp.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_udp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_udp.o ../src/spark_wiring_udp.cpp
+../src/spark_wiring_udp.cpp: In member function 'virtual void UDP::stop()':
+../src/spark_wiring_udp.cpp:87:11: warning: unused variable 'rv' [-Wunused-variable]
+       int rv = closesocket(_sock);
+           ^
+
+Building file: ../src/spark_wiring_usartserial.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_usartserial.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_usartserial.o ../src/spark_wiring_usartserial.cpp
+
+Building file: ../src/spark_wiring_usbserial.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_usbserial.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_usbserial.o ../src/spark_wiring_usbserial.cpp
+
+Building file: ../src/spark_wiring_wifi.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wiring_wifi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wiring_wifi.o ../src/spark_wiring_wifi.cpp
+
+Building file: ../src/spark_wlan.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/spark_wlan.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/spark_wlan.o ../src/spark_wlan.cpp
+
+Building file: ../src/stm32_it.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/stm32_it.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/stm32_it.o ../src/stm32_it.cpp
+
+Building file: ../src/usb_desc.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/usb_desc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/usb_desc.o ../src/usb_desc.cpp
+
+Building file: ../src/usb_endp.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/usb_endp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/usb_endp.o ../src/usb_endp.cpp
+
+Building file: ../src/usb_istr.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/usb_istr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/usb_istr.o ../src/usb_istr.cpp
+
+Building file: ../src/usb_prop.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/usb_prop.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/usb_prop.o ../src/usb_prop.cpp
+
+Building file: ../src/wifi_credentials_reader.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF obj/src/wifi_credentials_reader.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD -fno-rtti -fno-exceptions -c -o obj/src/wifi_credentials_reader.o ../src/wifi_credentials_reader.cpp
+
+Building file: ../src/startup/startup_stm32f10x_md.S
+Invoking: ARM GCC Assember
+mkdir -p obj/src/startup/
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m3 -mthumb  -x assembler-with-cpp -fmessage-length=0 -c -o obj/src/startup/startup_stm32f10x_md.o ../src/startup/startup_stm32f10x_md.S
+
+Building target: core-firmware.elf
+Invoking: ARM GCC C++ Linker
+mkdir -p ./
+arm-none-eabi-g++ -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../libraries/Serial2 -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-common-lib/SPARK_Services/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -Werror=deprecated-declarations -MD -MP -MF core-firmware.elf.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -DSPARK=1 -DRELEASE_BUILD  ./obj/src/application.o ./obj/src/main.o ./obj/src/newlib_stubs.o ./obj/src/spark_utilities.o ./obj/src/spark_wiring.o ./obj/src/spark_wiring_eeprom.o ./obj/src/spark_wiring_i2c.o ./obj/src/spark_wiring_interrupts.o ./obj/src/spark_wiring_ipaddress.o ./obj/src/spark_wiring_print.o ./obj/src/spark_wiring_random.o ./obj/src/spark_wiring_servo.o ./obj/src/spark_wiring_spi.o ./obj/src/spark_wiring_stream.o ./obj/src/spark_wiring_string.o ./obj/src/spark_wiring_tcpclient.o ./obj/src/spark_wiring_tcpserver.o ./obj/src/spark_wiring_time.o ./obj/src/spark_wiring_tone.o ./obj/src/spark_wiring_udp.o ./obj/src/spark_wiring_usartserial.o ./obj/src/spark_wiring_usbserial.o ./obj/src/spark_wiring_wifi.o ./obj/src/spark_wlan.o ./obj/src/stm32_it.o ./obj/src/usb_desc.o ./obj/src/usb_endp.o ./obj/src/usb_istr.o ./obj/src/usb_prop.o ./obj/src/wifi_credentials_reader.o ./obj/src/startup/startup_stm32f10x_md.o --output core-firmware.elf -T../linker/linker_stm32f10x_md_dfu.ld -nostartfiles -Xlinker --gc-sections  -L../../core-common-lib/build -lcore-common-lib -L../../core-communication-lib/build -lcore-communication-lib -Wl,-Map,core-firmware.map --specs=nano.specs -lc -lnosys -u _printf_float
+
+Invoking: ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O binary core-firmware.elf core-firmware.bin
+
+Invoking: ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex core-firmware.elf core-firmware.hex
+
+Invoking: ARM GNU Print Size
+arm-none-eabi-size --format=berkeley core-firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  78332	   1224	  11864	  91420	  1651c	core-firmware.elf
+
